@@ -1,9 +1,10 @@
-
-form{ 
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 0 auto;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
+.campo-erro {
+  border-color: #e0575c;
+  background: #fff5f5;
+}
+.mensagem-erro {
+  display: block;
+  color: #e0575c;
+  font-size: 12px;
+  margin: -4px 0 6px;
 }

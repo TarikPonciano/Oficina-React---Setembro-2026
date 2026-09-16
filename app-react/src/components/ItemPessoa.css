@@ -1,0 +1,10 @@
+.pessoa-item {
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.pessoa-item-email { color: #666; font-size: 14px; }

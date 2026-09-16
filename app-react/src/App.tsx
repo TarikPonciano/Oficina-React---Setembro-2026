@@ -18,14 +18,14 @@ function App() {
   }
 
   return (
-    <>
+    <main>
       <h1>Cadastro de Pessoas</h1>
       
       <FormCadastro onAdicionarPessoa = {adicionarPessoa}/>
 
       {pessoas.length == 0 ? <p>Não há pessoas cadastradas...</p>: <ListaPessoas pessoas={pessoas}/>}
       
-    </>
+    </main>
   )
 }
 
