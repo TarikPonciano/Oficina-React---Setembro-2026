@@ -12,13 +12,13 @@ function App() {
   const [pessoas, setPessoas] = useState<Pessoa[]>([])
 
   function adicionarPessoa (nova: Pessoa){
-
+    
     setPessoas([...pessoas, nova]) 
     
   }
 
   return (
-    <main>
+    <main>    
       <h1>Cadastro de Pessoas</h1>
       
       <FormCadastro onAdicionarPessoa = {adicionarPessoa}/>
