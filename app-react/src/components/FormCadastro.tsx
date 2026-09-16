@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import type { Pessoa } from "../types"
 import "./FormCadastro.css"
+import { buscarCep } from "../services/viacep";
 
 type Props = {
     onAdicionarPessoa: (nova: Pessoa) => void
@@ -50,7 +51,7 @@ export function FormCadastro({ onAdicionarPessoa }: Props) {
 
             setLogradouro(dados.logradouro)
             setCidade(dados.localidade)
-            setEstado(dados.estado)
+            setEstado(dados.uf)
             
         } catch {
             alert("ERRO AO BUSCAR CEP!")
